@@ -264,12 +264,13 @@ footer hr {
     }
     main #main-images{
         flex-wrap: nowrap;
-        justify-content: center;
+        justify-content: space-between;
         background-color: #4f6c99;
+        padding: 10px;
 
     }
     main #main-images img{
-        width: 10%;
+        width: 16%;
     }
 }
 
