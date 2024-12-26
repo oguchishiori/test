@@ -30,6 +30,9 @@ header #header-catch-text{
     letter-spacing: 3px;
 }
 
+#header-simple p {
+    font-size: 18px; 
+}
 
 
 #logo {
@@ -140,6 +143,9 @@ main #main-images img{
     width: 50%;
 }
 
+main #main-aboutme{
+    padding: 10%;
+}
 main #main-design{
     padding: 10%;
 }
