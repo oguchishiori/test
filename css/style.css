@@ -1,0 +1,442 @@
+
+/* CSS 変数定義 */
+:root {
+    --primary-bg: #4f6c99;
+    --secondary-bg: #b0d0e1;
+    --primary-color: white;
+    --secondary-color: #391400;
+    --padding-default: 24px;
+    --padding-narrow: 12px;
+}
+/* body リセット */
+body {
+    margin: 0px;
+}
+img {
+    width: 100%;
+}
+
+/* header */
+header {
+color: var(--primary-color);
+background-color: var(--primary-bg);
+padding: 5%;
+font-size: 25px;
+}
+
+header #header-catch-text{
+    letter-spacing: 3px;
+}
+
+
+
+#logo {
+    width: 80px;
+}
+
+
+/* menubar */
+#menubar #menu, #menubar #contact {
+    display: none;
+}
+@media(min-width: 768px){
+    #menubar #menu, #menubar #contact {
+        display: block;
+    }
+    #menubar {
+        display: flex;
+        justify-content: space-between;
+    }
+    #menubar #menu ul {
+        display: flex;
+    }
+    #menubar #menu ul li {
+        list-style: none;
+        margin-right: 10px;
+    }
+    #menubar #menu ul li a,
+    #menubar #menu ul li a:hover
+    {
+        color: white;
+        text-decoration: none;
+    }
+    #menubar button {
+        background-color: var(--primary-bg);
+        color: var(--primary-color);
+        padding: 12px;
+        border: 1px solid white;
+        border-radius: 6px;
+    }
+}
+
+/* main */
+main #main-about-title{
+    background-color: #b0d0e1;
+    color: white;
+    font-size: 25px;
+    padding: 5%;
+    text-align: center;
+    letter-spacing: 3px;
+}
+main #main-about {
+    color: var(--secondary-color);
+    background-color: var(--secondary-bg);
+    
+    font-size: 18px;
+    padding: 30px;
+    text-align: center;
+
+}
+
+main #main-about-image{
+    margin-bottom: 5%;
+}
+
+main #main-about-text{
+    color: white;
+    width: 100%;
+}
+
+main button{
+    margin-top: 20px;
+    bottom: 60px;
+    left: 12px;
+    background-color: white;
+    color: var(--secondary-color);
+    font-size: 12px;
+    padding: 4px 24px;
+    border-radius: 24px;
+}
+
+main #main-latestwork {
+    color: var(--primary-color);
+    background-color: var(--primary-bg);
+
+    padding: 10px;
+
+}
+main #main-latestwork-title {
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 36px;
+    padding-left: 2%;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+main #main-images{
+    display: flex;
+    flex-wrap: wrap;
+}
+main #main-images img{
+    width: 50%;
+}
+
+main #main-design{
+    padding: 10%;
+}
+main #main-plan{
+    padding: 10%;
+}
+main #main-wood{
+    padding: 10%;
+}
+
+/* footer */
+footer {
+    padding-top: 40px;
+    color: var(--primary-color);
+    background-color: var(--primary-bg);
+    font-size: 12px;
+    padding-left: var(--padding-footer);
+    padding-right: var(--padding-footer);
+}
+footer hr {
+    border-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 12px;
+}
+#footer-title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.footer-menu {
+    margin: 36px;
+    text-align: center;
+}
+.footer-menu-title {
+    color: var(--teritiary-color);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.footer-menu-item {
+    margin-bottom: 8px;
+    text-align: center;
+}
+#footer-sns {
+    margin-bottom: 24px;
+}
+.sns-icon {
+    width: 24px;
+}
+#footer-title,footer-menus, #footer-sns {
+    text-align: center;
+}
+
+#footer-sub{
+    text-align: center;
+    font-size: 9px;
+    padding-bottom: var(--padding-narrow);
+}
+
+/* work-card */
+.main-latestwork {
+    position: relative;
+}
+.work-genre, .work-title {
+    position: absolute;
+}
+.work-genre {
+    bottom: 60px;
+    left: 12px;
+    background-color: white;
+    color: var(--secondary-color);
+    font-size: 12px;
+    padding: 4px 24px;
+    border-radius: 24px;
+}
+.work-title {
+    bottom: 24px;
+    left: 12px;
+    font-weight: bold;
+}
+
+@media(min-width: 768px){
+    #header-catch {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #header-catch-img,#header-catch-text {
+        padding: 5%;
+    }
+
+}
+
+@media(min-width: 768px){
+    #main-about {
+        display: flex;
+    }
+    #main-about-image,#main-about-text {
+        padding: 5%;
+    }
+
+    #main-about-image{
+        width: 30%;
+    }
+
+    #main-about-text{
+        text-align: justify;
+        font-size: 15px;
+        width: 100%;
+    }
+    #main-latestwork-images {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-latestwork {
+        flex-basis: 33%;
+    }
+    main #main-images{
+        flex-wrap: nowrap;
+        justify-content: center;
+        background-color: #4f6c99;
+
+    }
+    main #main-images img{
+        width: 10%;
+    }
+}
+
+@media(min-width: 768px){
+    #main-design{
+        padding: 10%;
+    }
+    #main-plan{
+        padding: 10%;
+    }
+    #main-wood{
+        padding: 10%;
+    }
+}
+
+@media(min-width: 768px){
+    #footer-main, #footer-menus {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+}
+
+/* メニュー */
+header{
+    position: relative;
+}
+#menubar-mobile{
+    display: block;
+    position: absolute;
+    top: 0px;
+}
+
+/* ここから下がハンバーガーメニューに関するCSS */
+#menubar-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.nav {
+    margin-right: 40px;
+}
+/* チェックボックスを非表示にする */
+.drawer_hidden {
+    display: none;
+  }
+  
+  /* ハンバーガーアイコンの設置スペース */
+  .drawer_open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;/* 重なり順を一番上にする */
+    cursor: pointer;
+  }
+  
+  /* ハンバーガーメニューのアイコン */
+  .drawer_open span,
+  .drawer_open span:before,
+  .drawer_open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: white;
+    transition: 0.5s;
+    position: absolute;
+  }
+  
+  /* 三本線の一番上の棒の位置調整 */
+  .drawer_open span:before {
+    bottom: 8px;
+  }
+  
+  /* 三本線の一番下の棒の位置調整 */
+  .drawer_open span:after {
+    top: 8px;
+  }
+  
+  /* アイコンがクリックされたら真ん中の線を透明にする */
+  #drawer_input:checked ~ .drawer_open span {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+  #drawer_input:checked ~ .drawer_open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  
+  #drawer_input:checked ~ .drawer_open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+    
+  /* メニューのデザイン*/
+  .nav_content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%; /* メニューを画面の外に飛ばす */
+    z-index: 99;
+    background: var(--primary-bg);
+    color: var(--primary-color);
+    transition: .5s;
+  }
+  .nav_content a,
+  .nav_content a:link,
+  .nav_content a:hover,
+  .nav_content a:active {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  /* メニュー黒ポチを消す */
+  .nav_list {
+    list-style: none;
+  }
+  
+  /* アイコンがクリックされたらメニューを表示 */
+  #drawer_input:checked ~ .nav_content {
+    left: 0;/* メニューを画面に入れる */
+  }
+
+  @media(min-width: 768px){
+    #menubar-mobile{
+        display: none;
+    }
+}
+
+
+#header-simple{
+    text-align: center;
+}
+
+#main-portfolio{
+    color: var(--secondary-color);
+    background-color: var(--secondary-bg);
+    padding: var(--padding-default);
+}
+#main-portfolio li{
+    list-style-type: none;
+}
+#main-portfolio a,
+#main-portfolio a:link,
+#main-portfolio a:visited,
+#main-portfolio a:hover{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.main-portfolio-image {
+    position: relative;
+}
+
+@media(min-width: 768px){
+    #main-portfolio-images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .main-portfolio-image {
+        width: 30%;
+    }
+}
+
+#main-work{
+    color: var(--secondary-color);
+    background-color: var(--secondary-bg);
+    padding: var(--padding-default);
+}
+
+#header-catch
+img{
+    width: 50%;
+    
+}
+
+

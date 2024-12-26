@@ -3,9 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    Hello
+    <header>
+        <div id="menubar-mobile">
+            <div class="nav">
+    
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input id="drawer_input" class="drawer_hidden" type="checkbox">
+            
+                <!-- ハンバーガーアイコン -->
+                <label for="drawer_input" class="drawer_open"><span></span></label>
+            
+                <!-- メニュー -->
+                <nav class="nav_content">
+                  <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html">home</a></li>
+                    <li class="nav_item"><a href="aboutme.html">about me</a></li>
+                    <li class="nav_item"><a href="plan.html">plan</a></li>
+                    <li class="nav_item"><a href="design.html">design</a></li>
+                    <li class="nav_item"><a href="wood.html">wood</a></li>
+                  </ul>
+                </nav>
+           
+            </div>
+        </div>
+        <div id="menubar">
+            <div id="logo"><img src="./img/img-ogu/logo.png"></div>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="aboutme.html">about</a></li>
+                    <li><a href="plan.html">plan</a></li>
+                    <li><a href="design.html">design</a></li>
+                    <li><a href="wood.html">wood</a></li>
+                </ul>
+            </div>
+            <div id="contact">
+                <button>contact</button>
+            </div>
+        </div>
+
+        <div id="header-catch">
+            <div id="heafer-catch-img">
+                <img src="" alt="">
+            </div>
+            <div id="header-catch-text">小口詩織のポートフォリオ</div>
+        </div>
+    </header>
+    <main>
+       <div id="main-about-title">
+        ABOUT ME
+       </div>
+        <div id="main-about">
+            <div id="main-about-image">
+                <a href="aboutme.html">
+                <img src="./img/img-ogu/wooood.jpeg" alt="">
+            </a>
+            </div>
+
+            <div id="main-about-text">
+                帝京平成大学人文社会学部人間文化学科メディア文化コース所属<br>
+                造形のゼミに所属し、現在は木屑について研究しています<br>
+                <br>
+                
+            </div>
+        </div>
+        <div id="main-latestwork">
+            <div id="main-latestwork-title">WORK</div>
+            <div id="main-latestwork-images">
+                <div class="main-latestwork">
+                    <a href="./plan.html">
+                    <img src="./img/img-ogu/sinkaigyo_ok.png">
+                    </a>
+                    <div class="work-genre">企画</div>
+                    <div class="work-title">企画内容</div>
+                </div>
+                <div class="main-latestwork">
+                    <a href="./design.html">
+                    <img src="./img/img-ogu/yanagi_ok.png">
+                </a>
+                    <div class="work-genre">デザイン</div>
+                    <div class="work-title">デザインワーク</div>
+                </div>
+                <div class="main-latestwork">
+                    <a href="./wood.html">
+                    <img src="./img/img-ogu/wood_ok.png">
+                </a>
+                    <div class="work-genre">造形</div>
+                    <div class="work-title">木の加工</div>
+                </div>
+            </div>
+        </div>
+        <div id="main-images">
+            <img src="./img/img-ogu/akakurage.jpg">
+            <img src="./img/img-ogu/husenuo.jpg">
+            <img src="./img/img-ogu/color_jelly.jpeg">
+            <img src="./img/img-ogu/penguin.jpeg">
+            <img src="./img/img-ogu/pacific.jpeg">
+            <img src="./img/img-ogu/mizukurage.jpeg">
+        </div>
+    </main>
+    <footer>
+        <div id="footer-main">
+            <div id="footer-title">contact</div>
+            <div id="footer-menus">
+                <div class="footer-menu">
+                    <div class="footer-menu-title">mail</div>
+                    <div class="footer-menu-item">322D15016@edu.thu.ac.jp</div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-sub">copyright ©️2024 oguchishiori.
+            All Rights Reserved.
+        </div>
+    </footer>
 </body>
 </html>
