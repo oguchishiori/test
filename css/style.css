@@ -11,6 +11,8 @@
 /* body リセット */
 body {
     margin: 0px;
+    overflow-x: hidden;
+
 }
 img {
     width: 100%;
@@ -59,6 +61,7 @@ header #header-catch-text{
     {
         color: white;
         text-decoration: none;
+        font-size: 20px;
     }
     #menubar button {
         background-color: var(--primary-bg);
@@ -88,6 +91,11 @@ main #main-about {
 
 }
 
+@media(max-width: 768px){
+    #main-about-text{
+        font-size: 15px;
+    }
+}
 main #main-about-image{
     margin-bottom: 5%;
 }
